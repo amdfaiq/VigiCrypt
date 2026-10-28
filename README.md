@@ -21,6 +21,7 @@ Fungsi history bertujuan untuk menyimpan dan menampilkan riwayat hasil enkripsi 
 Fitur dark mode memungkinkan pengguna untuk beralih antara tema terang (light mode) dan tema gelap (dark mode) untuk meningkatkan kenyamanan visual, terutama dalam kondisi pencahayaan rendah.
 
 **Dokumentasi**
+
 <img width="841" height="389" alt="image" src="https://github.com/user-attachments/assets/140fa8ce-aadb-4a43-9659-70517b0be63c" />
 
 <img width="841" height="392" alt="image" src="https://github.com/user-attachments/assets/95e8b2ae-eb3f-4bf7-89b0-0ee3f154abe2" />

@@ -1,0 +1,265 @@
+/* File: styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+textarea, input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 80%;  /* Lebih fleksibel untuk layar kecil */
+    max-width: 600px;
+    max-height: 80vh;  /* Pastikan popup tidak melebihi viewport */
+    overflow-y: auto;  /* Tambahkan scroll jika konten terlalu panjang */
+    box-sizing: border-box;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #282828;  /* Warna latar belakang utama */
+    color: #e0e0e0;             /* Warna teks utama */
+}
+
+.dark-mode .container {
+    background: #3c3c3c;        /* Warna latar belakang container */
+    color: #f5f5f5;             /* Warna teks utama dalam container */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid #3c3c3c;  /* Border dengan warna Black Olive */
+}
+
+/* Warna input dan textarea dalam dark mode */
+.dark-mode textarea, 
+.dark-mode input {
+    background-color: #ECDFCC;  /* Warna latar belakang input */
+    color: #3C3D37;             /* Warna teks */
+    border: 1px solid #5a5a5a;  /* Border sedikit lebih terang */
+}
+
+/* Warna tombol dalam dark mode */
+.dark-mode button {
+    background-color: #10a37f;  /* Warna hijau khas ChatGPT */
+    color: white;
+    border: none;
+}
+
+.dark-mode button:hover {
+    background-color: #0e8e6d;  /* Warna hijau lebih gelap saat hover */
+}
+
+/* Warna sidebar dalam dark mode */
+.dark-mode .sidebar {
+    background-color: #141414;  /* Warna sidebar */
+    border-right: 1px solid #3c3c3c;
+}
+
+.dark-mode .sidebar a {
+    color: #d1d5db;
+}
+
+.dark-mode .sidebar a:hover {
+    background-color: #10a37f;
+}
+
+/* Dark Mode untuk Popup */
+.dark-mode .popup {
+    background: #3c3c3c;
+    color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border: 1px solid #5a5a5a;
+}
+
+/* Pastikan teks di dalam popup tetap terlihat dengan baik */
+.popup-content {
+    text-align: left;
+    word-wrap: break-word;  /* Pastikan teks panjang tetap terlihat */
+    overflow-wrap: break-word;
+}
+
+/* Pastikan list (jika ada) di dalam popup dapat di-scroll */
+.popup-content ul {
+    max-height: 60vh;  /* Batas tinggi agar tidak terlalu panjang */
+    overflow-y: auto;  /* Tambahkan scroll jika langkah-langkah terlalu banyak */
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Dark mode untuk list dalam popup */
+.dark-mode .popup-content ul {
+    background: #555;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #4CAF50;
+}
+
+/* Styling popup untuk dark mode */
+.dark-mode .popup {
+    background: #555;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.dark-mode .popup-content h3 {
+    color: #ffcc00; /* Warna judul yang kontras */
+}
+
+.dark-mode .popup-content ul {
+    color: white; /* Warna teks langkah-langkah */
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+/* Dark Mode Styling for History */
+.dark-mode .history {
+    background: #555;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Warna tombol Delete dan Clear tetap merah di semua mode */
+.delete-btn, .clear-btn {
+    background-color: #e74c3c; /* Warna merah */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover, .clear-btn:hover {
+    background-color: #c0392b; /* Warna merah lebih gelap saat hover */
+}
+
+/* Pastikan dark mode tidak mengubah warna tombol Delete & Clear */
+.dark-mode .delete-btn, 
+.dark-mode .clear-btn {
+    background-color: #e74c3c !important; /* Paksa tetap merah */
+    color: white;
+}
+
+.dark-mode .delete-btn:hover, 
+.dark-mode .clear-btn:hover {
+    background-color: #c0392b !important; /* Paksa tetap merah saat hover */
+}

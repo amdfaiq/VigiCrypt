@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="landingpage.html">Home</a>
+        <a href="encryption.html">Encryption</a>
+        <a href="decryption.html">Decryption</a>
+        <a href="history.html">History</a>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+    <div class="container">
+        <h1>Decryption</h1>
+        <textarea id="cipherInput" placeholder="Enter Cipher Text"></textarea>
+        <input type="text" id="keyInput" placeholder="Enter Decryption Key">
+        <button onclick="decryptText()">Decrypt</button>
+        <p>Plain Text: <span id="plainOutput"></span></p>
+        <button onclick="showPopup('decrypt')">Show Steps</button>
+        <div id="popup" class="popup"></div>
+    </div>
+</body>
+</html>

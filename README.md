@@ -1,10 +1,10 @@
 # VigiCrypt
 Website statis yang dibangun untuk mengimplementasikan algoritma enkripsi dan dekripsi Vigenère Cipher, salah satu metode kriptografi klasik yang menggunakan kunci berbasis teks untuk mengamankan pesan.
 
-**Tech stack**
+**Tech stack**:
 HTML, CSS, Javascript
 
-**Features**
+**Features**:
 1. Enkripsi
 Fitur enkripsi pada web ini menggunakan algoritma Vigenère Cipher, yang merupakan teknik kriptografi klasik yang memanfaatkan pergeseran karakter dalam pesan berdasarkan kunci yang diberikan. Pengguna dapat mengonversi teks biasa (plaintext) menjadi teks terenkripsi (ciphertext).
 
